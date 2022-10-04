@@ -38,7 +38,7 @@ export class CdkApprunnerDemoStack extends Stack {
         repositoryUrl: 'https://github.com/smartbenson1/hello-app-runner.git',
         branch: 'main',
         configurationSource: apprunner.ConfigurationSourceType.REPOSITORY,
-        connection: apprunner.GitHubConnection.fromConnectionArn('arn:aws:apprunner:ap-northeast-1:409489027555:connection/github_app_runner/58c3f7e5ced84eb19fcfe30b0e56b0f0'),
+        connection: apprunner.GitHubConnection.fromConnectionArn(#REPLACE_WITH_ARN_OF_CONNECTION),
       }),
       vpcConnector,
       instanceRole: instancerole,
